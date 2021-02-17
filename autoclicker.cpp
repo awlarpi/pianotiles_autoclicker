@@ -1,5 +1,5 @@
 //credits to Adrian McCarthy and Newbie, capturescreen functions sourced from stackoverflow 'How to read screen pixels'
-//record: 44.736 tiles/s
+//record: 44.736 tiles/s in single tile challenge
 //config: bluestacks4 with file explorer, vs 2019 and powershell running
 #include <stdio.h>
 #include <windows.h>
@@ -12,7 +12,7 @@ using namespace std;
 void CaptureScreen(HDC hCaptureDC, HDC hDesktopDC, HBITMAP hCaptureBitmap);
 void click(int x, int y);
 
-//list of x and y values to check on screen
+//list of x and y values to check on screen, adjust accordingly
 int nScreenWidth = GetSystemMetrics(SM_CXSCREEN);
 int nScreenHeight = GetSystemMetrics(SM_CYSCREEN);
 
@@ -21,14 +21,14 @@ int len = sizeof(y) / sizeof(int);
 
 int x[] = { 139, 143, 419, 423 };
 
-//acceleration compensation, values depends on which level in the game, adjust accordingly
+//acceleration compensation, values depends on which level in the game, edjust accordingly
 //beginner challlenge : speedgradient 0.037, initial 3.33
 //single tile challenge : speedgradient 0.0875, intial 5
-double clickspeed = 0.0168;     //time taken to click
-int tileheight = 249;           
-double speedgradient = 0.0875;  //rate at which tile/s increases
-double initialspeed = 5;        //initial tile/s
-int extradis = 200;             //additional compensation distance to click below tile
+double clickspeed = 0.0168;
+int tileheight = 249;
+double speedgradient = 0.0875; //rate at which tiles/s increases
+double initialspeed = 5;       //initial tile/s
+int extradis = 200;
 
 int main()
 {
@@ -43,7 +43,13 @@ int main()
     HBITMAP hCaptureBitmap = CreateCompatibleBitmap(hDesktopDC, nScreenWidth, nScreenHeight);
     SelectObject(hCaptureDC, hCaptureBitmap);
 
-    //loop the clicking algorithm
+    //press s to start
+    while (GetAsyncKeyState(0x53) == 0)
+    {
+        continue;
+    }
+
+    //loop the clicking algorithm, press q to quit
     while (GetAsyncKeyState(0x51) == 0)
     {
         clock_t t = clock();
