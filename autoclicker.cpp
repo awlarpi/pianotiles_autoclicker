@@ -21,7 +21,6 @@ double speedgradient = 0.0875; //rate at which tiles/s increases
 double initialspeed = 5;       //initial tile/s
 int extradis = 200;
 
-
 int nScreenWidth = GetSystemMetrics(SM_CXSCREEN);
 int nScreenHeight = GetSystemMetrics(SM_CYSCREEN);
 
