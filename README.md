@@ -1,1 +1,17 @@
 # pianotiles_autoclicker
+
+pianotiles_autoclicker is a script that can play piano tiles 2. It takes a screenshot and scans for pixels on the screen corresponding to the colour of the tile. It then clicks below where the pixel was detected to account for the distance during the script's reaction time. The so called compensation distance scales with time as the game accelerates.
+
+## Usage
+
+I have not added autoamatic adaptibility for different positions of the game window, so users will have to set the target pixels for the clicker manually.
+Additionally, each level will require different presets for initial speed and acceleration.
+To use, simply complie and run the autoclicker.cpp file. Press s to start, and q to quit the program. 
+
+## Contributing
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
+Please make sure to update tests as appropriate.
+
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
