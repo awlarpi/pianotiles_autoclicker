@@ -6,6 +6,7 @@ pianotiles_autoclicker is a script that can play piano tiles 2. It takes a scree
 
 I have not added autoamatic adaptibility for different positions of the game window, so users will have to set the target pixels for the clicker manually.
 Additionally, each level will require different presets for initial speed and acceleration.
+
 To use, simply complie and run the autoclicker.cpp file. Press s to start, and q to quit the program. 
 
 ## Contributing
