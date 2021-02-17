@@ -7,7 +7,10 @@ It takes a screenshot and scans for pixels on the screen corresponding to the co
 ## Usage
 
 I have not added autoamatic adaptibility for different positions of the game window, so users will have to set the target pixels for the clicker manually.
-Additionally, each level will require different presets for initial speed and acceleration.
+
+Additionally, each level will require different presets for initial speed and acceleration:
+  beginner challlenge : speedgradient 0.037, initial 3.33
+  single tile challenge : speedgradient 0.0875, intial 5
 
 To use, simply complie and run the autoclicker.cpp file. Press s to start, and q to quit the program. 
 
