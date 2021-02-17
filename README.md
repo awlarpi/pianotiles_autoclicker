@@ -10,8 +10,10 @@ I have not added autoamatic adaptibility for different positions of the game win
 
 Additionally, each level will require different presets for initial speed and acceleration:
 
-  beginner challlenge : speedgradient 0.037, initial 3.33
-  single tile challenge : speedgradient 0.0875, intial 5
+```bash
+beginner challlenge : speedgradient 0.037, initial 3.33
+single tile challenge : speedgradient 0.0875, intial 5
+```  
 
 To use, simply complie and run the autoclicker.cpp file. Press s to start, and q to quit the program. 
 
