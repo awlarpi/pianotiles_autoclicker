@@ -2,7 +2,7 @@
 
 pianotiles_autoclicker is a script that can play piano tiles 2. 
 
-It takes a screenshot and scans for pixels on the screen corresponding to the colour of the tile. It then clicks below where the pixel was detected to account for the distance during the script's reaction time. The compensation distance scales with time as the game accelerates.
+It takes a screenshot and scans for pixels on the screen corresponding to the colour of the tile. It then clicks below where the pixel was detected to account for the distance the tile moves during the script's reaction time. The compensation distance scales with time as the game accelerates.
 
 ## Usage
 
