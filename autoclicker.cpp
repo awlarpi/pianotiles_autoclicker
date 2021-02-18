@@ -15,11 +15,11 @@ void click(int x, int y);
 //acceleration compensation, values depends on which level in the game, edjust accordingly
 //beginner challlenge : speedgradient 0.037, initial 3.33
 //single tile challenge : speedgradient 0.0875, intial 5
-double clickspeed = 0.0168;
-int tileheight = 249;
-double speedgradient = 0.0875; //rate at which tiles/s increases
-double initialspeed = 5;       //initial tile/s
-int extradis = 200;
+double clickspeed = 0.0168;     //time taken to click
+int tileheight = 249;           
+double speedgradient = 0.0875;  //rate at which tile/s increases
+double initialspeed = 5;        //initial tile/s
+int extradis = 200;             //additional compensation distance to click below tile
 
 int nScreenWidth = GetSystemMetrics(SM_CXSCREEN);
 int nScreenHeight = GetSystemMetrics(SM_CYSCREEN);
