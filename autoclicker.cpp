@@ -12,9 +12,7 @@ using namespace std;
 void CaptureScreen(HDC hCaptureDC, HDC hDesktopDC, HBITMAP hCaptureBitmap);
 void click(int x, int y);
 
-//acceleration compensation, values depends on which level in the game, edjust accordingly
-//beginner challlenge : speedgradient 0.037, initial 3.33
-//single tile challenge : speedgradient 0.0875, intial 5
+//acceleration compensation, values depends on which level in the game, adjust accordingly
 double clickspeed = 0.0168;     //time taken to click
 int tileheight = 249;           
 double speedgradient = 0.0875;  //rate at which tile/s increases
